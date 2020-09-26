@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import "./moblie.scss";
+$Font: "PT Sans", sans-serif;
+$InputFont: "Montserrat", sans-serif;
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .app {
+    height: 100vh;
+    font-family: $Font;
+    width: 100%;
+    background-attachment: fixed;
+    background: linear-gradient(
+      to bottom,
+      rgb(134, 75, 182) 16%,
+      rgb(185, 18, 135) 30%,
+      rgb(221, 25, 58)
+    );
+    display: grid;
+    place-items: center;
+  }
+
+  .input {
+    border: none;
+    outline: none;
+    height: 5rem;
+    font-family: $InputFont;
+    min-width: 25rem;
+    width: auto;
+    text-indent: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.9rem;
+  }
+
+  .row {
+    position: relative;
+    margin: 1rem 0rem;
+
+    &__select {
+      font-family: $InputFont;
+      text-align-last: right;
+      outline: none;
+      border: none;
+      padding-right: 2.9rem;
+      position: absolute;
+      font-size: 2rem;
+      background-color: rgb(43, 38, 38);
+      top: -0.1rem;
+      width: 12rem;
+      color: #fff;
+      height: 5.15rem;
+      height: 5.15rem;
+    }
+  }
+  .row__input--voilet {
+    background-color: rgba(102, 3, 80, 0.9);
+    color: #fff;
+  }
+}

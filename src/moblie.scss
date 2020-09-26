@@ -1,0 +1,70 @@
+@media only screen and (max-width: 600px) {
+  $Font: "PT Sans", sans-serif;
+  $InputFont: "Montserrat", sans-serif;
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .app {
+    height: 100vh;
+    font-family: $Font;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background: linear-gradient(
+      to bottom,
+      rgb(134, 75, 182) 16%,
+      rgb(185, 18, 135) 30%,
+      rgb(221, 25, 58)
+    );
+    display: grid;
+    place-items: center;
+  }
+  .input {
+    border: none;
+    outline: none;
+    position: relative;
+    left: -1rem;
+    height: 5rem;
+    width: 60%;
+    display: inline-block;
+    font-family: $InputFont;
+    width: 25rem;
+    text-indent: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.9rem;
+  }
+  .row {
+    position: relative;
+    margin: 1rem 0rem;
+
+    &__select {
+      font-family: $InputFont;
+      text-align-last: right;
+      outline: none;
+      border: none;
+      //   padding-right: 2.9rem;
+      position: relative;
+      left: -2rem;
+      font-size: 1.9rem;
+      background-color: rgb(43, 38, 38);
+      top: -0rem;
+      width: 8rem;
+      color: #fff;
+      height: 5.15rem;
+      height: 5.15rem;
+    }
+  }
+  .row__input--voilet {
+    background-color: rgba(102, 3, 80, 0.9);
+    color: #fff;
+  }
+}
